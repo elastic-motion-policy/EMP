@@ -184,18 +184,146 @@
 <!-- Paper poster -->
 <section class="hero is-small is-light" style="background: #ffffff;">
   <div class="hero-body">
-    <div class="container">
+      <div class="container">
       <h2 class="title" style="text-align: center;">EMP Pipeline Overview</h2>
 
       <img style="display: block; margin: auto;" src="static/images/block_diagram_v5.png" alt="EMP Pipeline" width="60%"/>
         
       </div>
+     </br>
+      <div class="container has-text-justified" style="width: 60%; text-align: center; text-justify: auto;">
+        <p>We design a pipeline centering around the core EMP module. The data collection pipeline takes a single demonstration video, which then extracts a single trajectory data and the relevant object keypose. During inference, the tracking with RGBD provides keypose for the EMP module, allowing the learned stable motion policy to morph with pose constraints. The updated stable motion policy is passed into a passive impedance controller, which sends torque control commands to the robot.</p>
+      </div>
     </div>
-  </section> -->
+  </section>
 <!--End paper poster-->
 
 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> 
+      <!-- Paper video. -->
+      <div class="colums is-centered has-text-centered">
+      <h2 class="title is-3">Experiment: Book Placement</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="columns">
+            <div class="column is-half">
+              <h3 class="subtitle is-4">Single Demonstration</h3>
+              <video poster="" id="demo" autoplay controls muted loop height="100%">
+                <source src="static/videos/bookshelf_demo1.mp4"
+                type="video/mp4">
+              </video>
+              <p>A single demonstration of placing the book into a bookrack</p>
+            </div>
+            <div class="column is-half">
+              <h3 class="subtitle is-4">Deploy and Adapt</h3>
+              <video poster="" id="adapt" autoplay controls muted loop height="100%">
+                <source src="static/videos/bookshelf_adapt2.mp4"
+                type="video/mp4">
+              </video>
+              <p>Here is a non-stop video showing the learned policy can adapt.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> 
+      <!-- Paper video. -->
+      <div class="colums is-centered has-text-centered">
+      <h2 class="title is-3">Experiment: Pouring Cubes</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-centered">
+          <div class="columns">
+            <div class="column is-4">
+              <h3 class="subtitle is-3">Single Demonstration</h3>
+              <video poster="" id="demo" autoplay controls muted loop height="100%">
+                <source src="static/videos/pouring_demo.mp4"
+                type="video/mp4">
+              </video>
+              <p>A single demonstration of pouring cubes into a saucepan</p>
+            </div>
+            <div class="column is-4">
+              <h3 class="subtitle is-3">Long Video</h3>
+              <video poster="" id="adapt1" autoplay controls muted loop height="100%">
+                <source src="static/videos/pouring_adapt5_small.mp4"
+                type="video/mp4">
+              </video>
+              <p>Here is a 2 mins non-stop video showing the learned policy can adapt</p>
+            </div>
+            <div class="column is-4">
+              <h3 class="subtitle is-3">More adapting</h3>
+              <video poster="" id="adapt2" autoplay controls muted loop height="100%">
+                <source src="static/videos/pouring_adapt_cont.mp4"
+                type="video/mp4">
+              </video>
+              <p>Here is an example of the policy just keep updating online</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> 
+      <!-- Paper video. -->
+      <div class="colums is-centered has-text-centered">
+      <h2 class="title is-3">Experiment: Multi-Step Pick and Place</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-centered">
+          <div class="columns">
+            <div class="column is-3">
+              <h3 class="subtitle is-3">Single Demonstration</h3>
+              <video poster="" id="demo" autoplay controls muted loop height="100%">
+                <source src="static/videos/pnp_demo.mp4"
+                type="video/mp4">
+              </video>
+              <p>A single demonstration of multiple pick and place</p>
+            </div>
+            <div class="column is-3">
+              <h3 class="subtitle is-3">Adapt to Interruption</h3>
+              <video poster="" id="adapt2" autoplay controls muted loop height="100%">
+                <source src="static/videos/pnp_adapt3.mp4"
+                type="video/mp4">
+              </video>
+              <p>During execution, a human interruption moves the container</p>
+            </div>
+            <div class="column is-3">
+              <h3 class="subtitle is-3">Adapt to New Configuration</h3>
+              <video poster="" id="adapt1" autoplay controls muted loop height="100%">
+                <source src="static/videos/pnp_adapt2.mp4"
+                type="video/mp4">
+              </video>
+              <p>Adapt to a different configuration from the demonstration</p>
+            </div>
+            <div class="column is-3">
+              <h3 class="subtitle is-3">Adapt to Interruption</h3>
+              <video poster="" id="adapt3" autoplay controls muted loop height="100%">
+                <source src="static/videos/pnp_adapt4.mp4"
+                type="video/mp4">
+              </video>
+              <p>During execution, a human interruption moves the object</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Youtube video -->
 <!-- <section class="hero is-small is-light">
