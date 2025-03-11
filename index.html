@@ -180,12 +180,29 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper poster -->
+<section class="hero is-small is-light" style="background: #ffffff;">
+  <div class="hero-body">
+      <div class="container">
+      <h2 class="title" style="text-align: center;">A Glimpse of EMP</h2>
+
+      <img style="display: block; margin: auto;" src="static/images/intro.png" alt="EMP Pipeline" width="50%"/>
+        
+      </div>
+     </br>
+      <div class="container has-text-justified" style="width: 60%; text-align: center; text-justify: auto;">
+        <p></p>
+      </div>
+    </div>
+  </section>
+<!--End paper poster-->
+
 
 <!-- Paper poster -->
 <section class="hero is-small is-light" style="background: #ffffff;">
   <div class="hero-body">
       <div class="container">
-      <h2 class="title" style="text-align: center;">EMP Pipeline Overview</h2>
+      <h2 class="title" style="text-align: center;">EMP Pipeline</h2>
 
       <img style="display: block; margin: auto;" src="static/images/block_diagram_v5.png" alt="EMP Pipeline" width="60%"/>
         
@@ -224,6 +241,23 @@
                 type="video/mp4">
               </video>
               <p>Here is a non-stop video showing the learned policy can adapt. Note that in this video, we only allow the robot to execute when the object movement is settle down. We also show the learned policy can handle perturbations.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- <h2 class="title is-3">Visualizing Real-Time Rollout</h2> -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="columns">
+            <div class="column is-normal">
+              <h3 class="subtitle is-4">Visualizing Real-Time Rollout</h3>
+              <video poster="" id="demo" autoplay controls muted loop height="100%">
+                <source src="static/videos/emp_rt.mp4"
+                type="video/mp4">
+              </video>
+              <p>We would like to show how the policy adapts as things change. Here is an example of real-time policy rollout (in blue) visualization. As the bookrack pose changes (the small moving frame) and the robot end-effector changes, the policy adapts to it in real time.</p>
             </div>
           </div>
         </div>
